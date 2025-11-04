@@ -7,6 +7,62 @@
     <link rel="stylesheet" href="/form-validator/first-form/style.css">
 </head>
 <body>
-    
+    <main>
+        <form action="#">
+
+            <div class="header-form">
+                <h3 id="title">Formulário de Contato</h3>
+            </div>
+            <div class="labels">
+                <div class="label-name">
+                    <label for="name-input">Nome Completo</label>
+                    <input type="text" name="name" id="name-input">
+                </div>
+                <div class="label-email">
+                    <label for="email-input">E-mail</label>
+                    <input type="email" name="email" id="email-input">
+                </div>
+                <div class="label-tel">
+                    <label for="tel-input">Telefone</label>
+                    <input type="tel" name="tel" id="tel-input">
+                </div>
+                <div class="label-radius">
+                    <label for="#">Sexo</label>
+                    <div class="radius">
+                        <div class="radio-male">
+                            <input type="radio" name="radio" id="radio-input-male">
+                            <label for="radio-input-male">Masculino</label>
+                        </div>
+                        <div class="radio-famele">
+                            <input type="radio" name="radio" id="radio-input-famale">
+                            <label for="radio-input-famale">Feminino</label>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="label-dropdown">
+                    <label for="dropdown-input">Quero aprender a fazer?</label>
+                    <select name="dropdown-input" id="dropdown-input">
+                        <option value="Select">Selecione</option>
+                        <option value="Formularios">Formulários</option>
+                        <option value="Select">Menus</option>
+                        <option value="Select">Rodapé</option>
+                        <option value="Select">Botão</option>
+                    </select>
+                </div>
+                <div class="label-textarea">
+                    <textarea name="textarea" id="textarea-input"></textarea>
+                </div>
+                <div class="btn">
+                    <button type="submit" class="btn-style">Enviar Dados</button>
+                </div>
+
+            </div>
+            <footer>
+                <p class="text-footer">Desenvolvido por: <a href="https://www.linkedin.com/in/kaio-leandro/" target="_blank">Kaio Leandro</a></p>
+                <p class="text-footer">Todos os direitos Reservados</p>
+            </footer>
+        </form>
+    </main>
 </body>
 </html>
