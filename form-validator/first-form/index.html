@@ -13,22 +13,26 @@
             <div class="header-form">
                 <h3 id="title">Formulário de Contato</h3>
             </div>
+
             <div class="labels">
                 <div class="label-name">
                     <label for="name-input">Nome Completo</label>
-                    <input type="text" name="name" id="name-input">
+                    <input type="text" name="name" id="name-input" placeholder="Digite seu nome completo">
                 </div>
-                <div class="label-email">
-                    <label for="email-input">E-mail</label>
-                    <input type="email" name="email" id="email-input">
+                <div class="label-email-tel">
+                    <div class="label-email">
+                        <label for="email-input">E-mail</label>
+                        <input type="email" name="email" id="email-input" placeholder="Digite seu E-mail">
+                    </div>
+                    <div class="label-tel">
+                        <label for="tel-input">Telefone</label>
+                        <input type="tel" name="tel" id="tel-input" placeholder="Digite seu Telefone">
+                    </div>
                 </div>
-                <div class="label-tel">
-                    <label for="tel-input">Telefone</label>
-                    <input type="tel" name="tel" id="tel-input">
-                </div>
-                <div class="label-radius">
+
+                <div class="label-radios">
                     <label for="#">Sexo</label>
-                    <div class="radius">
+                    <div class="radios">
                         <div class="radio-male">
                             <input type="radio" name="radio" id="radio-input-male">
                             <label for="radio-input-male">Masculino</label>
@@ -37,11 +41,15 @@
                             <input type="radio" name="radio" id="radio-input-famale">
                             <label for="radio-input-famale">Feminino</label>
                         </div>
+                        <div class="radio-others">
+                            <input type="radio" name="radio" id="radio-others">
+                            <label for="radio-others">Prefiro não dizer</label>
+                        </div>
                     </div>
 
                 </div>
                 <div class="label-dropdown">
-                    <label for="dropdown-input">Quero aprender a fazer?</label>
+                    <label for="dropdown-input" id="dropdown-title">Quero aprender a fazer?</label>
                     <select name="dropdown-input" id="dropdown-input">
                         <option value="Select">Selecione</option>
                         <option value="Formularios">Formulários</option>
@@ -54,15 +62,15 @@
                     <textarea name="textarea" id="textarea-input"></textarea>
                 </div>
                 <div class="btn">
-                    <button type="submit" class="btn-style">Enviar Dados</button>
+                    <button type="submit" class="btn-style">ENVIAR DADOS</button>
                 </div>
 
             </div>
-            <footer>
-                <p class="text-footer">Desenvolvido por: <a href="https://www.linkedin.com/in/kaio-leandro/" target="_blank">Kaio Leandro</a></p>
-                <p class="text-footer">Todos os direitos Reservados</p>
-            </footer>
         </form>
     </main>
+    <footer>
+        <p class="text-footer">Desenvolvido por: <a href="https://www.linkedin.com/in/kaio-leandro/" target="_blank">Kaio Leandro</a></p>
+        <p class="second-text-footer">Todos os direitos Reservados</p>
+    </footer>
 </body>
 </html>

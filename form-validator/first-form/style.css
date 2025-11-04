@@ -1,2 +1,144 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    outline: none;
+}
+
+:root{
+    --background-color: #21203f;
+    --background-form: #2e2638;
+    --text-primary-color: #fff1ce;
+    --background-btn-color: #21203f;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--background-color);
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: var(--background-form);
+}
+.header-form{
+    text-align: center;
+}
+
+#title{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary-color);
+}
+
+.labels{
+    display: flex;
+    flex-direction: column;
+}
+
+.label-name, .label-email, .label-tel, .label-radios, .label-dropdown{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    gap: 8px;
+}
+
+input{
+    padding: .7rem;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+label{
+    color: var(--text-primary-color);
+    font-weight: bold;
+    padding-right: 5rem;
+}
+
+.label-email-tel{
+    display: flex;
+    gap: 10px;
+}
+
+.label-email, .label-tel, #dropdown-title{
+    width: 100%;
+}
+
+.radios{
+    display: flex;
+}
+
+.radio-male, .radio-famele, .radio-others{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#radio-input-male, #radio-input-famale, #radio-others{
+    width: 18px;
+    height: 18px;
+}
+
+#dropdown-input{
+    padding: .7rem;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#textarea-input{
+    width: 100%;
+    height: 10rem;
+    font-size: 1rem;
+    padding: .6rem;
+    border-radius: 5px;
+}
+
+.btn-style{
+    background-color: var(--background-btn-color);
+    color: var(--text-primary-color);
+    padding: 1.2rem;
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+a{
+    color: var(--text-primary-color);
+}
+
+.text-footer{
+    color: var(--text-primary-color);
+}
+
+.second-text-footer{
+    font-size: 1.2rem;
+    color: var(--text-primary-color);
+}
+
