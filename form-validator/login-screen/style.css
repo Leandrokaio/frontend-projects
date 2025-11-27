@@ -10,10 +10,13 @@
 
 
 body{
+    /* USO DO FLEXBOX PARA ALINHAR O FORMULÁRIO NO CENTRO */
     display: flex;
     justify-content: center;
     align-items: center;
+    /* USO DO MIN-HEIGHT PARA QUE O FLEXBOX CONSIGA CENTRALIZAR VERTICALMENTE */
     min-height: 100vh;
+    /* USO DO BACKGROUND E SUAS PROPRIEDADES PARA ADICIONAR IMAGEM E CENTRALIZAR COM A BOX DO BODY */
     background: url('./img/img.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -21,13 +24,14 @@ body{
 }
 
 .container{
-    width: 420px;
+    width: 480px;
     background-color: transparent;
     border: 2px solid rgba(255, 255, 255, .2);
     border-radius: 10px;
     color: #fff;
     padding: 30px 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    /* BACKDROP-FILTER PARA FAZER O EFEITO DE BLUR NO FUNDO */
     backdrop-filter: blur(50px);
 }
 
@@ -55,6 +59,7 @@ body{
     border-radius: 40px;
 }
 
+/* USO DO INPUT::PLACEHOLDER PARA ESTILIZAR A FRASE DE FUNDO DO INPUT  */
 .input-box input::placeholder{
     color: #c5c5c5;
 }
@@ -70,7 +75,7 @@ body{
 .remeber-forgot{
     display: flex;
     justify-content: space-between;
-    margin: -15px 0 15px;
+    margin: -15px 0 20px;
 }
 
 .remeber-forgot label input{
@@ -98,7 +103,7 @@ button{
     color: #333;
     font-weight: 600;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 button:hover{
